@@ -23,23 +23,36 @@ document.addEventListener("DOMContentLoaded", function() {
     // 名言のリスト
     const quotes = [
         "一日一歩。",
-        "夢中になれば道は開ける。",
-        "やりたいことをやる勇気が成功を生む。",
-        "一つの小さなステップが人生を変える。",
-        "今日を愛することが、明日を作る。",
-        "未来は今日の行動によって作られる。",
-        "千里の道も一歩から。",
-        "失敗しても次を試す勇気を持とう。",
-        "先を急ぐな、今を大切に。",
-        "一度きりの人生、後悔しないよう生きよう。",
-        "明日を変えるのは、今日の行動だ。",
-        "大事なのはゴールではなく、その過程だ。",
-        "行動することで、初めて変化が起こる。",
-        "努力する人を、運命は助ける。",
-        "挑戦し続けることが、未来を開く。",
-        "何事も経験。失敗も経験だ。",
-        "誰もが成功する可能性を秘めている。",
-        "どんな小さな努力も無駄ではない。",
+        "Your time is limited, don't waste it living someone else's life." 
+        - Steve Jobs
+        
+        "The way to get started is to quit talking and begin doing." 
+        - Walt Disney
+        
+        "Success usually comes to those who are too busy to be looking for it." 
+        - Henry David Thoreau
+        
+        "Don’t be afraid to assert yourself, have confidence in your abilities and don’t let the bastards get you down." 
+        - Michael Bloomberg
+        
+        "I knew that if I failed I wouldn’t regret that, but I knew the one thing I might regret is not trying." 
+        - Jeff Bezos
+    
+        "It’s not about ideas. It’s about making ideas happen." 
+        - Scott Belsky
+        
+        "Risk more than others think is safe. Dream more than others think is practical." 
+        - Howard Schultz
+        
+        "Do not be embarrassed by your failures, learn from them and start again." 
+        - Richard Branson
+    
+        "The biggest risk is not taking any risk. In a world that is changing quickly, the only strategy that is guaranteed to fail is not taking risks." 
+        - Mark Zuckerberg
+        
+        "I choose a lazy person to do a hard job. Because a lazy person will find an easy way to do it." 
+        - Bill Gates
+    
     ];
 
 
