@@ -1,0 +1,171 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #edecf1;
+}
+
+#siteTitle {
+    /* 既存のスタイルプロパティを保持しつつ、新しいスタイルを追加 */
+    padding: 1rem 3rem;
+    -webkit-transform: skew(-15deg);
+    transform: skew(-15deg);
+    color: #fff;
+    background-image: -webkit-gradient(linear, left top, right top, from(#209cff), to(#68e0cf));
+    background-image: -webkit-linear-gradient(left, #209cff 0%, #68e0cf 100%);
+    background-image: linear-gradient(to right, #209cff 0%, #68e0cf 100%);
+}
+
+#currentDate {
+    font-size: 2em; /* フォントサイズを大きくします */
+    font-weight: bold; /* テキストを太字にします */
+    color: #686868; /* フォントカラーを変更します */
+    border-bottom: 2px solid #686868; /* 下線を追加します */
+    margin-bottom: 20px; /* 下側のマージンを追加します */
+    padding-bottom: 10px; /* 下側のパディングを追加します */
+    text-shadow: 2px 2px 2px #ccc; /* テキストシャドウを追加します */
+}
+
+/* 登録ボタンのスタイルを変更 */
+#registerButton {
+    /* ... 既存のコード ... */
+
+    /* 追加したボタンスタイルを適用 */
+    width: 100px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    margin: 18px;
+    height: 40px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(
+        to right,
+        #25aae1,
+        #40e495,
+        #30dd8a,
+        #2bb673
+    );
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+#registerButton:hover {
+    background-position: 100% 0;
+}
+
+#registerButton:focus {
+    outline: none;
+}
+
+#addButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    background-image: -webkit-gradient(linear, left top, right top, from(#209cff), to(#68e0cf));
+    background-image: -webkit-linear-gradient(left, #209cff 0%, #68e0cf 100%);
+    background-image: linear-gradient(to right, #209cff 0%, #68e0cf 100%);
+    border: none;
+}
+
+#popup {
+    position: fixed;  /* 絶対位置から固定位置に変更 */
+    top: 50%;         /* 上から50%の位置に配置 */
+    left: 50%;        /* 左から50%の位置に配置 */
+    transform: translate(-50%, -50%); /* 自身のサイズの50%分左上方向にずらす（中央揃えのため） */
+    background-color: #fff;
+    border: 2px solid #515251;  /* ボーダーの色を明るい緑に */
+    padding: 20px;
+    width: 300px;     /* 幅を設定 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* テキストを中央揃えに */
+    font-family: 'Your Font', sans-serif; /* 使用したいフォントを設定 */
+    font-size: 16px;  /* フォントサイズを設定 */
+    border-radius: 10px;  /* 角を丸く */
+}
+
+#deleteButton {
+    background-color: #4d4f4d; /* ボタンの背景色を明るい緑に */
+    color: #fff;      /* ボタンのテキスト色を白に */
+    border: none;     /* ボーダーを削除 */
+    padding: 10px 20px;  /* パディングを適用 */
+    border-radius: 5px;  /* ボタンの角を丸く */
+    cursor: pointer;  /* カーソルをポインタに */
+    font-size: 16px;  /* フォントサイズを設定 */
+}
+
+#deleteButton:hover {
+    background-color: #70cc70; /* ホバー時の背景色を変更 */
+}
+
+textarea#reflection {
+    width: 70%; /* テキストエリアの幅を100%（親要素に対する）に設定します。 */
+    height: 100px; /* テキストエリアの高さを200pxに設定します。 */
+    margin-bottom: 10px; /* テキストエリアの下に少しマージンを設定します。 */
+    padding: 10px; /* テキストエリア内のテキストとボーダーとの間に少しパディングを設定します。 */
+    font-size: 16px; /* フォントサイズを16pxに設定します。 */
+}
+
+.btn-hover {
+    width: 130px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    margin: 18px;
+    height: 40px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+  }
+  
+  .btn-hover:hover {
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+  }
+  
+  .btn-hover:focus {
+    outline: none;
+  }
+  
+  .btn-review {
+    background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+  }
+  
+  .btn-save {
+    background-image: linear-gradient(to right, #a18cd1, #fbc2eb);
+    box-shadow: 0 4px 15px 0 rgba(161, 140, 209, 0.75);
+  }
+  
+.hidden {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#inputForm {
+    margin-top: 20px;
+}
+
+.inputRow {
+    margin-bottom: 10px;
+}
+
+.inputRow label {
+    display: inline-block;
+    width: 100px;
+}

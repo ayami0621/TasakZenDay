@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <!-- Add D3.js library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <title>Calendar</title>
+</head>
+<body>
+    <h1 id="siteTitle">TaskZenDay</h1>
+    <h2 id="currentDate">Today's Date</h2>
+    <div id="clockContainer">
+        <div id="circleGraph"></div>
+    </div>    
+    <div id="popup" class="hidden">
+        <p id="eventDetails">Event Details</p>
+        <button id="deleteButton">削除</button>
+    </div>    
+    <button id="addButton">+</button>
+    <div id="inputForm" class="hidden">
+        <div class="inputRow">
+            <label for="startTime">開始時間:</label>
+            <input type="time" id="startTime">
+        </div>
+        <div class="inputRow">
+            <label for="endTime">終了時間:</label>
+            <input type="time" id="endTime">
+        </div>
+        <div class="inputRow">
+            <label for="title">予定:</label>
+            <input type="text" id="title">
+        </div>
+        <div class="inputRow">
+            <label for="color">色:</label>
+            <input type="color" id="eventColor" list="presetColors">
+            <datalist id="presetColors">
+                <option>#ffd3a8</option>
+                <option>#ffffa8</option>
+                <option>#d3ffa8</option>
+                <option>#a8ffd3</option>
+                <option>#ffa8a8</option>
+                <option>#ffa8d3</option>
+                <option>#ffa8ff</option>
+                <option>#d3a8ff</option>
+                <option>#a8d3ff</option>
+                <option>#a8ffff</option>
+            </datalist> 
+        </div>
+        <button id="registerButton">登録</button>
+    </div>
+    <!-- 名言表示領域 -->
+    <h3 id="quote">"Your daily quote will appear here."</h3>
+    
+    <!-- 振り返り入力領域 -->
+    <textarea id="reflection" placeholder="今日の振り返り"></textarea>
+    <button id="saveReflection" class="btn-hover btn-save">振り返り登録</button>
+
+    <!-- タスク一覧ボタン -->
+    <button id="reviewButton" class="btn-hover btn-review">今日を振り返る</button>
+
+    <!-- 振り返り表示領域 -->
+    <div id="review" class="hidden">
+        <h3>今日のタスク一覧</h3>
+        <table id="eventsReview">
+            <thead>
+                <tr>
+                    <th>開始時間</th>
+                    <th>終了時間</th>
+                    <th>予定</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- JavaScript でデータがここに動的に挿入されます -->
+            </tbody>
+        </table>
+        <h3>今日の振り返り</h3>
+        <p id="reflectionReview"></p>
+        <!-- Twitterシェアボタン -->
+        <a href="" id="twitterShareButton" target="_blank">Xでシェア</a>
+    </div>
+</body>
+</html>
