@@ -22,36 +22,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // 名言のリスト
     const quotes = [
-        "Your time is limited, don't waste it living someone else's life." 
-        - Steve Jobs,
-        
-        "The way to get started is to quit talking and begin doing." 
-        - Walt Disney,
-        
-        "Success usually comes to those who are too busy to be looking for it." 
-        - Henry David Thoreau,
-        
-        "Don’t be afraid to assert yourself, have confidence in your abilities and don’t let the bastards get you down." 
-        - Michael Bloomberg,
-        
-        "I knew that if I failed I wouldn’t regret that, but I knew the one thing I might regret is not trying." 
-        - Jeff Bezos,
-    
-        "It’s not about ideas. It’s about making ideas happen." 
-        - Scott Belsky,
-        
-        "Risk more than others think is safe. Dream more than others think is practical." 
-        - Howard Schultz,
-        
-        "Do not be embarrassed by your failures, learn from them and start again." 
-        - Richard Branson,
-    
-        "The biggest risk is not taking any risk. In a world that is changing quickly, the only strategy that is guaranteed to fail is not taking risks." 
-        - Mark Zuckerberg,
-        
-        "I choose a lazy person to do a hard job. Because a lazy person will find an easy way to do it." 
-        - Bill Gates,
-    
+        "Your time is limited, don't waste it living someone else's life. Steve Jobs",
+        "The way to get started is to quit talking and begin doing. Walt Disney",
+        "I knew that if I failed I wouldn’t regret that, but I knew the one thing I might regret is not trying.Jeff Bezos",
+        "It’s not about ideas. It’s about making ideas happen.Scott Belsky",
+        "Risk more than others think is safe. Dream more than others think is practical.Howard Schultz",
+        "Do not be embarrassed by your failures, learn from them and start again.Richard Branson",
+        "The biggest risk is not taking any risk. In a world that is changing quickly, the only strategy that is guaranteed to fail is not taking risks.Mark Zuckerberg",
+        "I choose a lazy person to do a hard job. Because a lazy person will find an easy way to do it.Bill Gates",    
     ];
 
 
